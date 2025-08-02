@@ -1,0 +1,1067 @@
+<!DOCTYPE html>
+<!-- saved from url=(0087)https://assets-persist.lovart.ai/agent_images/57218026-3b29-42b6-adfb-ab05a506eb93.html -->
+<html lang="zh-CN"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>资料搜集整理专家</title>
+    <link href="./资料搜集整理专家2_files/remixicon.min.css" rel="stylesheet">
+    <style>
+        @font-face {
+            font-family: 'NotoSerifCJKsc';
+            src: url('https://assets-persist.lovart.ai/agent-static-assets/NotoSerifCJKsc-SemiBold.otf') format('opentype');
+            font-weight: 600;
+            font-style: normal;
+        }
+        
+        @font-face {
+            font-family: 'NotoSansHans';
+            src: url('https://assets-persist.lovart.ai/agent-static-assets/NotoSansHans-Regular.otf') format('opentype');
+            font-weight: 400;
+            font-style: normal;
+        }
+        
+        @font-face {
+            font-family: 'NotoSansHans';
+            src: url('https://assets-persist.lovart.ai/agent-static-assets/NotoSansHans-Medium.otf') format('opentype');
+            font-weight: 500;
+            font-style: normal;
+        }
+
+        :root {
+            --primary-bg: #F6F4EF;
+            --primary-color: #123B63;
+            --accent-color: #D4AF37;
+            --neutral-gray: #8995A5;
+            --light-gray: #E2E6EB;
+            --white: #FFFFFF;
+            --transition: all 0.3s ease;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'NotoSansHans', sans-serif;
+            background-color: var(--primary-bg);
+            color: var(--primary-color);
+            line-height: 1.6;
+            overflow-x: hidden;
+            width: 100%;
+            max-width: 1920px;
+            margin: 0 auto;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1440px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header & Navigation */
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background-color: var(--white);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+            max-width: 1920px;
+            margin: 0 auto;
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 20px;
+            max-width: 1440px;
+            margin: 0 auto;
+        }
+
+        .logo {
+            font-family: 'NotoSerifCJKsc', serif;
+            font-weight: 600;
+            font-size: 24px;
+            color: var(--primary-color);
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+        }
+
+        .logo i {
+            margin-right: 8px;
+            color: var(--accent-color);
+            font-size: 28px;
+        }
+
+        .nav-menu {
+            display: flex;
+            list-style: none;
+        }
+
+        .nav-item {
+            margin-left: 30px;
+        }
+
+        .nav-link {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 16px;
+            padding: 8px 0;
+            position: relative;
+            transition: var(--transition);
+        }
+
+        .nav-link:after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: 0;
+            left: 0;
+            background-color: var(--accent-color);
+            transition: var(--transition);
+        }
+
+        .nav-link:hover:after {
+            width: 100%;
+        }
+
+        .hamburger {
+            display: none;
+            cursor: pointer;
+            background: none;
+            border: none;
+            font-size: 24px;
+            color: var(--primary-color);
+        }
+
+        /* Hero Section */
+        .hero {
+            padding: 140px 0 80px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .hero-content {
+            flex: 1;
+            padding-right: 40px;
+        }
+
+        .hero-title {
+            font-family: 'NotoSerifCJKsc', serif;
+            font-weight: 600;
+            font-size: 48px;
+            margin-bottom: 20px;
+            line-height: 1.2;
+            color: var(--primary-color);
+        }
+
+        .hero-subtitle {
+            font-size: 24px;
+            color: var(--neutral-gray);
+            margin-bottom: 30px;
+        }
+
+        .hero-btn {
+            display: inline-block;
+            background-color: var(--primary-color);
+            color: var(--white);
+            padding: 12px 30px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: var(--transition);
+            border: 2px solid var(--primary-color);
+        }
+
+        .hero-btn:hover {
+            background-color: transparent;
+            color: var(--primary-color);
+        }
+
+        .hero-image {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .hero-graphic {
+            width: 100%;
+            max-width: 500px;
+            height: 400px;
+            background-color: var(--light-gray);
+            border-radius: 20px;
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .hero-graphic:before {
+            content: '';
+            position: absolute;
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            background-color: rgba(18, 59, 99, 0.1);
+            top: -100px;
+            right: -100px;
+        }
+
+        .hero-graphic:after {
+            content: '';
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            background-color: rgba(212, 175, 55, 0.1);
+            bottom: -50px;
+            left: -50px;
+        }
+
+        .hero-icon {
+            font-size: 120px;
+            color: var(--primary-color);
+            z-index: 1;
+        }
+
+        /* Services Section */
+        .services {
+            padding: 80px 0;
+            background-color: var(--white);
+        }
+
+        .section-title {
+            font-family: 'NotoSerifCJKsc', serif;
+            font-weight: 600;
+            font-size: 36px;
+            text-align: center;
+            margin-bottom: 50px;
+            position: relative;
+            padding-bottom: 15px;
+        }
+
+        .section-title:after {
+            content: '';
+            position: absolute;
+            width: 80px;
+            height: 3px;
+            background-color: var(--accent-color);
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .services-container {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+
+        .service-card {
+            flex: 1;
+            min-width: 300px;
+            background-color: var(--primary-bg);
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+            transition: var(--transition);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .service-card:before {
+            content: '';
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background-color: rgba(212, 175, 55, 0.1);
+            top: -50px;
+            right: -50px;
+        }
+
+        .service-icon {
+            font-size: 48px;
+            color: var(--accent-color);
+            margin-bottom: 20px;
+        }
+
+        .service-title {
+            font-family: 'NotoSerifCJKsc', serif;
+            font-weight: 600;
+            font-size: 24px;
+            margin-bottom: 15px;
+        }
+
+        .service-description {
+            color: var(--neutral-gray);
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+
+        .service-link {
+            display: inline-flex;
+            align-items: center;
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 500;
+            transition: var(--transition);
+        }
+
+        .service-link i {
+            margin-left: 5px;
+            transition: var(--transition);
+        }
+
+        .service-link:hover {
+            color: var(--accent-color);
+        }
+
+        .service-link:hover i {
+            transform: translateX(5px);
+        }
+
+        /* Why Choose Us Section */
+        .why-us {
+            padding: 80px 0;
+            background-color: var(--primary-bg);
+        }
+
+        .stats-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 30px;
+            margin-top: 50px;
+        }
+
+        .stat-item {
+            text-align: center;
+            padding: 20px;
+            min-width: 200px;
+        }
+
+        .stat-number {
+            font-family: 'NotoSerifCJKsc', serif;
+            font-weight: 600;
+            font-size: 48px;
+            color: var(--accent-color);
+            margin-bottom: 10px;
+            position: relative;
+            display: inline-block;
+        }
+
+        .stat-number:after {
+            content: '+';
+            font-size: 30px;
+            position: absolute;
+            top: 0;
+            right: -20px;
+        }
+
+        .stat-label {
+            color: var(--neutral-gray);
+            font-size: 18px;
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--primary-color);
+            color: var(--white);
+            padding: 50px 0 30px;
+        }
+
+        .footer-container {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 40px;
+        }
+
+        .footer-info {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .footer-logo {
+            font-family: 'NotoSerifCJKsc', serif;
+            font-weight: 600;
+            font-size: 24px;
+            color: var(--white);
+            margin-bottom: 20px;
+            display: block;
+        }
+
+        .footer-description {
+            color: rgba(255, 255, 255, 0.7);
+            margin-bottom: 20px;
+            max-width: 400px;
+        }
+
+        .contact-btn {
+            display: inline-block;
+            background-color: var(--accent-color);
+            color: var(--primary-color);
+            padding: 10px 25px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: var(--transition);
+        }
+
+        .contact-btn:hover {
+            background-color: var(--white);
+        }
+
+        .footer-links {
+            flex: 1;
+            display: flex;
+            justify-content: flex-end;
+            gap: 60px;
+            flex-wrap: wrap;
+        }
+
+        .footer-links-column {
+            min-width: 150px;
+        }
+
+        .footer-links-title {
+            font-family: 'NotoSerifCJKsc', serif;
+            font-weight: 600;
+            font-size: 18px;
+            margin-bottom: 20px;
+            color: var(--white);
+        }
+
+        .footer-links-list {
+            list-style: none;
+        }
+
+        .footer-link-item {
+            margin-bottom: 10px;
+        }
+
+        .footer-link {
+            color: rgba(255, 255, 255, 0.7);
+            text-decoration: none;
+            transition: var(--transition);
+        }
+
+        .footer-link:hover {
+            color: var(--accent-color);
+        }
+
+        .copyright {
+            text-align: center;
+            padding-top: 30px;
+            margin-top: 50px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: rgba(255, 255, 255, 0.5);
+            font-size: 14px;
+        }
+
+        /* Modal */
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: 2000;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .modal-content {
+            background-color: var(--white);
+            border-radius: 15px;
+            padding: 30px;
+            max-width: 500px;
+            width: 90%;
+            max-height: 90vh;
+            overflow-y: auto;
+            position: relative;
+            animation: modalFadeIn 0.3s ease;
+        }
+
+        @keyframes modalFadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .modal-close {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            background: none;
+            border: none;
+            font-size: 24px;
+            cursor: pointer;
+            color: var(--neutral-gray);
+            transition: var(--transition);
+        }
+
+        .modal-close:hover {
+            color: var(--primary-color);
+        }
+
+        .modal-title {
+            font-family: 'NotoSerifCJKsc', serif;
+            font-weight: 600;
+            font-size: 24px;
+            margin-bottom: 20px;
+            color: var(--primary-color);
+        }
+
+        .modal-body {
+            margin-bottom: 20px;
+        }
+
+        .contact-info {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+
+        .contact-info i {
+            font-size: 20px;
+            color: var(--accent-color);
+            margin-right: 10px;
+            width: 24px;
+            text-align: center;
+        }
+
+        .contact-info-text {
+            color: var(--neutral-gray);
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 1200px) {
+            .container {
+                padding: 0 40px;
+            }
+            
+            .hero-title {
+                font-size: 42px;
+            }
+            
+            .hero-subtitle {
+                font-size: 22px;
+            }
+            
+            .service-card {
+                min-width: 280px;
+            }
+        }
+
+        @media (max-width: 992px) {
+            .hero {
+                flex-direction: column;
+                padding: 120px 0 60px;
+                text-align: center;
+            }
+            
+            .hero-content {
+                padding-right: 0;
+                margin-bottom: 40px;
+            }
+            
+            .hero-graphic {
+                max-width: 400px;
+                height: 300px;
+            }
+            
+            .services-container {
+                justify-content: center;
+            }
+            
+            .service-card {
+                min-width: 45%;
+            }
+            
+            .footer-links {
+                justify-content: flex-start;
+                gap: 40px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .nav-menu {
+                position: fixed;
+                top: 70px;
+                left: -100%;
+                flex-direction: column;
+                background-color: var(--white);
+                width: 100%;
+                text-align: center;
+                transition: 0.3s;
+                box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+                padding: 20px 0;
+            }
+            
+            .nav-menu.active {
+                left: 0;
+            }
+            
+            .nav-item {
+                margin: 15px 0;
+            }
+            
+            .hamburger {
+                display: block;
+            }
+            
+            .hero-title {
+                font-size: 36px;
+            }
+            
+            .hero-subtitle {
+                font-size: 20px;
+            }
+            
+            .service-card {
+                min-width: 100%;
+            }
+            
+            .section-title {
+                font-size: 30px;
+            }
+            
+            .stat-item {
+                min-width: 45%;
+            }
+            
+            .footer-container {
+                flex-direction: column;
+            }
+            
+            .footer-links {
+                justify-content: space-between;
+            }
+            
+            .footer-links-column {
+                min-width: 120px;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .container {
+                padding: 0 20px;
+            }
+            
+            .hero-title {
+                font-size: 32px;
+            }
+            
+            .hero-subtitle {
+                font-size: 18px;
+            }
+            
+            .hero-graphic {
+                max-width: 300px;
+                height: 240px;
+            }
+            
+            .hero-icon {
+                font-size: 80px;
+            }
+            
+            .section-title {
+                font-size: 26px;
+            }
+            
+            .stat-item {
+                min-width: 100%;
+            }
+            
+            .stat-number {
+                font-size: 40px;
+            }
+            
+            .modal-content {
+                padding: 20px;
+            }
+        }
+
+        @media (max-width: 428px) {
+            .nav-container {
+                padding: 12px 15px;
+            }
+            
+            .logo {
+                font-size: 20px;
+            }
+            
+            .hero {
+                padding: 100px 0 50px;
+            }
+            
+            .hero-title {
+                font-size: 28px;
+            }
+            
+            .hero-subtitle {
+                font-size: 16px;
+            }
+            
+            .hero-btn {
+                padding: 10px 25px;
+                font-size: 14px;
+            }
+            
+            .hero-graphic {
+                max-width: 260px;
+                height: 200px;
+            }
+            
+            .service-title {
+                font-size: 20px;
+            }
+            
+            .service-icon {
+                font-size: 40px;
+            }
+            
+            .footer-logo {
+                font-size: 20px;
+            }
+            
+            .contact-btn {
+                padding: 8px 20px;
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body style="overflow: auto;">
+    <!-- Header & Navigation -->
+    <header>
+        <div class="nav-container">
+            <a href="https://assets-persist.lovart.ai/agent_images/57218026-3b29-42b6-adfb-ab05a506eb93.html#" class="logo">
+                <i class="ri-file-search-line"></i>
+                资料搜集整理专家
+            </a>
+            <button class="hamburger" id="hamburger"><i class="ri-menu-line"></i></button>
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item">
+                    <a href="https://assets-persist.lovart.ai/agent_images/57218026-3b29-42b6-adfb-ab05a506eb93.html#" class="nav-link" data-modal="home-modal">首页</a>
+                </li>
+                <li class="nav-item">
+                    <a href="https://assets-persist.lovart.ai/agent_images/57218026-3b29-42b6-adfb-ab05a506eb93.html#" class="nav-link" data-modal="data-modal">数据搜集</a>
+                </li>
+                <li class="nav-item">
+                    <a href="https://assets-persist.lovart.ai/agent_images/57218026-3b29-42b6-adfb-ab05a506eb93.html#" class="nav-link" data-modal="info-modal">资料搜集</a>
+                </li>
+                <li class="nav-item">
+                    <a href="https://assets-persist.lovart.ai/agent_images/57218026-3b29-42b6-adfb-ab05a506eb93.html#" class="nav-link" data-modal="doc-modal">文档整理</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">资料搜集整理专家</h1>
+                <p class="hero-subtitle">资料搜集整理交给我</p>
+                <a href="https://assets-persist.lovart.ai/agent_images/57218026-3b29-42b6-adfb-ab05a506eb93.html#services" class="hero-btn">了解我们的服务</a>
+            </div>
+            <div class="hero-image">
+                <div class="hero-graphic">
+                    <i class="ri-file-list-3-line hero-icon"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="container">
+            <h2 class="section-title">服务项目</h2>
+            <div class="services-container">
+                <div class="service-card">
+                    <i class="ri-database-2-line service-icon"></i>
+                    <h3 class="service-title">数据搜集</h3>
+                    <p class="service-description">专业团队帮您收集各类数据，包括市场调研、竞品分析、用户反馈等，为您的决策提供数据支持。</p>
+                    <a href="https://assets-persist.lovart.ai/agent_images/57218026-3b29-42b6-adfb-ab05a506eb93.html#" class="service-link" data-modal="data-modal">了解更多 <i class="ri-arrow-right-line"></i></a>
+                </div>
+                <div class="service-card">
+                    <i class="ri-file-search-line service-icon"></i>
+                    <h3 class="service-title">资料搜集</h3>
+                    <p class="service-description">帮您搜集整理各类专业资料，包括学术论文、行业报告、政策法规等，节省您的时间和精力。</p>
+                    <a href="https://assets-persist.lovart.ai/agent_images/57218026-3b29-42b6-adfb-ab05a506eb93.html#" class="service-link" data-modal="info-modal">了解更多 <i class="ri-arrow-right-line"></i></a>
+                </div>
+                <div class="service-card">
+                    <i class="ri-file-text-line service-icon"></i>
+                    <h3 class="service-title">文档整理</h3>
+                    <p class="service-description">提供专业的文档整理服务，包括格式规范、内容编辑、结构优化等，让您的文档更加专业有序。</p>
+                    <a href="https://assets-persist.lovart.ai/agent_images/57218026-3b29-42b6-adfb-ab05a506eb93.html#" class="service-link" data-modal="doc-modal">了解更多 <i class="ri-arrow-right-line"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="why-us">
+        <div class="container">
+            <h2 class="section-title">为什么选择我</h2>
+            <div class="stats-container">
+                <div class="stat-item">
+                    <div class="stat-number">600+</div>
+                    <div class="stat-label">服务客户</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">1000+</div>
+                    <div class="stat-label">完成项目</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">99+</div>
+                    <div class="stat-label">客户满意度</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">60000+</div>
+                    <div class="stat-label">交易额</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-info">
+                    <span class="footer-logo">资料搜集整理专家</span>
+                    <p class="footer-description">专业的资料搜集整理服务，为您提供一站式解决方案，让您的工作更加高效。</p>
+                    <a href="https://assets-persist.lovart.ai/agent_images/57218026-3b29-42b6-adfb-ab05a506eb93.html#" class="contact-btn" id="contact-btn">联系我们</a>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-links-column">
+                        <h3 class="footer-links-title">服务</h3>
+                        <ul class="footer-links-list">
+                            <li class="footer-link-item">
+                                <a href="https://assets-persist.lovart.ai/agent_images/57218026-3b29-42b6-adfb-ab05a506eb93.html#" class="footer-link" data-modal="data-modal">数据搜集</a>
+                            </li>
+                            <li class="footer-link-item">
+                                <a href="https://assets-persist.lovart.ai/agent_images/57218026-3b29-42b6-adfb-ab05a506eb93.html#" class="footer-link" data-modal="info-modal">资料搜集</a>
+                            </li>
+                            <li class="footer-link-item">
+                                <a href="https://assets-persist.lovart.ai/agent_images/57218026-3b29-42b6-adfb-ab05a506eb93.html#" class="footer-link" data-modal="doc-modal">文档整理</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-links-column">
+                        <h3 class="footer-links-title">关于</h3>
+                        <ul class="footer-links-list">
+                            <li class="footer-link-item">
+                                <a href="https://assets-persist.lovart.ai/agent_images/57218026-3b29-42b6-adfb-ab05a506eb93.html#" class="footer-link">关于我们</a>
+                            </li>
+                            <li class="footer-link-item">
+                                <a href="https://assets-persist.lovart.ai/agent_images/57218026-3b29-42b6-adfb-ab05a506eb93.html#" class="footer-link">团队介绍</a>
+                            </li>
+                            <li class="footer-link-item">
+                                <a href="https://assets-persist.lovart.ai/agent_images/57218026-3b29-42b6-adfb-ab05a506eb93.html#" class="footer-link">合作伙伴</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                © 2023 资料搜集整理专家. 保留所有权利.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modals -->
+    <!-- Home Modal -->
+    <div class="modal" id="home-modal">
+        <div class="modal-content">
+            <button class="modal-close"><i class="ri-close-line"></i></button>
+            <h2 class="modal-title">欢迎来到资料搜集整理专家</h2>
+            <div class="modal-body">
+                <p>我们是一家专业的资料搜集整理服务提供商，致力于为客户提供高效、精准的信息服务。无论您需要市场调研数据、学术资料还是专业文档整理，我们都能为您提供一站式解决方案。</p>
+                <p>浏览我们的网站，了解更多关于我们的服务和成功案例。如有任何问题，欢迎随时联系我们。</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Data Collection Modal -->
+    <div class="modal" id="data-modal" style="display: none;">
+        <div class="modal-content">
+            <button class="modal-close"><i class="ri-close-line"></i></button>
+            <h2 class="modal-title">数据搜集服务</h2>
+            <div class="modal-body">
+                <p>我们的数据搜集服务包括但不限于：</p>
+                <ul>
+                    <li>市场调研数据收集与分析</li>
+                    <li>竞品数据监测与对比</li>
+                    <li>用户行为数据收集</li>
+                    <li>行业趋势数据整理</li>
+                    <li>数据可视化与报告生成</li>
+                </ul>
+                <p>我们使用专业工具和方法，确保数据的准确性和时效性，为您的决策提供有力支持。</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Information Collection Modal -->
+    <div class="modal" id="info-modal">
+        <div class="modal-content">
+            <button class="modal-close"><i class="ri-close-line"></i></button>
+            <h2 class="modal-title">资料搜集服务</h2>
+            <div class="modal-body">
+                <p>我们的资料搜集服务涵盖：</p>
+                <ul>
+                    <li>学术论文与研究报告搜集</li>
+                    <li>行业政策与法规整理</li>
+                    <li>专业书籍与文献资料</li>
+                    <li>案例与最佳实践收集</li>
+                    <li>多语言资料翻译与整理</li>
+                </ul>
+                <p>我们拥有丰富的资源渠道和专业的搜集能力，能够为您提供全面、准确的资料支持。</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Document Organization Modal -->
+    <div class="modal" id="doc-modal">
+        <div class="modal-content">
+            <button class="modal-close"><i class="ri-close-line"></i></button>
+            <h2 class="modal-title">文档整理服务</h2>
+            <div class="modal-body">
+                <p>我们的文档整理服务包括：</p>
+                <ul>
+                    <li>文档格式规范与统一</li>
+                    <li>内容编辑与校对</li>
+                    <li>结构优化与逻辑梳理</li>
+                    <li>图表制作与美化</li>
+                    <li>文档分类与归档管理</li>
+                </ul>
+                <p>我们的专业团队将帮助您将杂乱的文档转变为条理清晰、专业美观的成品。</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Modal -->
+    <div class="modal" id="contact-modal" style="display: none;">
+        <div class="modal-content">
+            <button class="modal-close"><i class="ri-close-line"></i></button>
+            <h2 class="modal-title">联系我们</h2>
+            <div class="modal-body">
+                <div class="contact-info">
+                    <i class="ri-wechat-line"></i>
+                    <span class="contact-info-text">微信：huolianshu</span>
+                </div>
+                <div class="contact-info">
+                    <i class="ri-mail-line"></i>
+                    <span class="contact-info-text">邮箱：jishuaitao@163.com</span>
+                </div>
+                <p>无论您有任何问题或需求，都可以通过以上方式联系我们。我们的客服团队将在24小时内回复您的咨询。</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Mobile Menu Toggle
+        const hamburger = document.getElementById('hamburger');
+        const navMenu = document.getElementById('nav-menu');
+
+        hamburger.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+            hamburger.innerHTML = navMenu.classList.contains('active') 
+                ? '<i class="ri-close-line"></i>' 
+                : '<i class="ri-menu-line"></i>';
+        });
+
+        // Close mobile menu when clicking a nav link
+        const navLinks = document.querySelectorAll('.nav-link');
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                navMenu.classList.remove('active');
+                hamburger.innerHTML = '<i class="ri-menu-line"></i>';
+            });
+        });
+
+        // Modal functionality
+        const modals = document.querySelectorAll('.modal');
+        const modalTriggers = document.querySelectorAll('[data-modal]');
+        const modalCloses = document.querySelectorAll('.modal-close');
+        const contactBtn = document.getElementById('contact-btn');
+        const contactModal = document.getElementById('contact-modal');
+
+        // Open modal when clicking on trigger elements
+        modalTriggers.forEach(trigger => {
+            trigger.addEventListener('click', (e) => {
+                e.preventDefault();
+                const modalId = trigger.getAttribute('data-modal');
+                const modal = document.getElementById(modalId);
+                modal.style.display = 'flex';
+                document.body.style.overflow = 'hidden';
+            });
+        });
+
+        // Open contact modal when clicking contact button
+        contactBtn.addEventListener('click', (e) => {
+            e.preventDefault();
+            contactModal.style.display = 'flex';
+            document.body.style.overflow = 'hidden';
+        });
+
+        // Close modal when clicking close button
+        modalCloses.forEach(close => {
+            close.addEventListener('click', () => {
+                const modal = close.closest('.modal');
+                modal.style.display = 'none';
+                document.body.style.overflow = 'auto';
+            });
+        });
+
+        // Close modal when clicking outside of modal content
+        modals.forEach(modal => {
+            modal.addEventListener('click', (e) => {
+                if (e.target === modal) {
+                    modal.style.display = 'none';
+                    document.body.style.overflow = 'auto';
+                }
+            });
+        });
+
+        // Close modal when pressing Escape key
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') {
+                modals.forEach(modal => {
+                    modal.style.display = 'none';
+                });
+                document.body.style.overflow = 'auto';
+            }
+        });
+    </script>
+
+
+<div id="__FEISHU_CLIPPER__"></div></body></html>
